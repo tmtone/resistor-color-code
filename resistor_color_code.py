@@ -8,8 +8,8 @@ DIGITS = {
 
 # multiplier band
 MULTIPLIER = {
-    "black": 1, "brown": 10, "red": 100, "orange": 1_000,
-    "yellow": 10_000, "green": 100_000, "blue": 1_000_000,
+    "black": 1, "brown": 10, "red": 100, "orange": 1000,
+    "yellow": 10000, "green": 100000, "blue": 1000000,
     "gold": 0.1, "silver": 0.01,
 }
 
@@ -50,10 +50,10 @@ def calculate(colors):
 
 def pretty(ohms):
     """470 -> '470 Ω', 4700 -> '4.7 kΩ', 1000000 -> '1 MΩ'"""
-    if ohms >= 1_000_000:
-        return f"{ohms / 1_000_000:g} MΩ"
-    if ohms >= 1_000:
-        return f"{ohms / 1_000:g} kΩ"
+    if ohms >= 1000000:
+        return f"{ohms / 1000000:g} MΩ"
+    if ohms >= 1000:
+        return f"{ohms / 1000:g} kΩ"
     return f"{ohms:g} Ω"
 
 
