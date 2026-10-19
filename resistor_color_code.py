@@ -29,7 +29,7 @@ def normalize(color):
     color = color.strip().lower()
     if color in GERMAN:
         color = GERMAN[color]
-    return color.replace("grey", "gray")
+    return color.replace("grey", "gray").replace("purple", "violet")
 
 
 def calculate(colors):
