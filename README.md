@@ -7,8 +7,12 @@ I'm learning electronics and robotics from zero. Built with AI help, but I didn'
 ## usage
 
 ```
+git clone https://github.com/tmtone/resistor-color-code.git
+cd resistor-color-code
 python3 resistor_color_code.py
 ```
+
+![test run](screenshot.png)
 
 ```
 Colors (e.g. yellow violet brown gold): gelb violett braun gold
