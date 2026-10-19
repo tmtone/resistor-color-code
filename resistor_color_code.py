@@ -19,10 +19,16 @@ TOLERANCE = {
     "violet": 0.1, "gray": 0.05, "gold": 5, "silver": 10,
 }
 
+GERMAN = {
+    "schwarz": "black", "braun": "brown", "rot": "red", "gelb": "yellow", "grün": "green", "blau": "blue", "lila": "violet", "grau": "gray", "weiß": "white", "silber": "silver"
+}
+
 
 def normalize(color):
     """lowercase, no extra spaces, grey works too"""
     color = color.strip().lower()
+    if color in GERMAN:
+        color = GERMAN[color]
     return color.replace("grey", "gray")
 
 
