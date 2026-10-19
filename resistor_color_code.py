@@ -19,13 +19,16 @@ TOLERANCE = {
     "violet": 0.1, "gray": 0.05, "gold": 5, "silver": 10,
 }
 
+# german names, orange and gold are the same in both
 GERMAN = {
-    "schwarz": "black", "braun": "brown", "rot": "red", "gelb": "yellow", "grün": "green", "blau": "blue", "lila": "violet", "grau": "gray", "weiß": "white", "silber": "silver"
+    "schwarz": "black", "braun": "brown", "rot": "red", "gelb": "yellow",
+    "grün": "green", "blau": "blue", "violett": "violet", "lila": "violet",
+    "grau": "gray", "weiß": "white", "silber": "silver",
 }
 
 
 def normalize(color):
-    """lowercase, no extra spaces, grey works too"""
+    """lowercase, no extra spaces, german names, grey and purple work too"""
     color = color.strip().lower()
     if color in GERMAN:
         color = GERMAN[color]
